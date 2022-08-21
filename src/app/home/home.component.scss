@@ -1,0 +1,13 @@
+.screen {
+	position: absolute;
+	inset: 0;
+	background-color: #eee;
+
+	> .card {
+		position: absolute;
+		margin: auto;
+		width: 640px;
+		height: 380px;
+		inset: 0;
+	}
+}
