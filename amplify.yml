@@ -13,7 +13,7 @@ frontend:
       commands:
         - amplify publish --yes --force
   artifacts:
-    baseDirectory: dist/medical-art
+    baseDirectory: dist/web3-sample-ui
     files:
       - '**/*'
   cache:

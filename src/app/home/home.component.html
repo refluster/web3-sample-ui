@@ -7,14 +7,17 @@
           -->
     </mat-card-header>
     <mat-card-content>
-      <button mat-stroked-button>Basic</button>
 
       <form class="form">
-        <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label>Favorite food</mat-label>
-          <input matInput placeholder="Ex. Pizza" value="Sushi">
+        <mat-form-field class="form">
+          <mat-label>Wallet address</mat-label>
+          <input matInput placeholder="0xABCD0123..." [(ngModel)]="address" name="address">
         </mat-form-field>
+        <button mat-stroked-button (click)="getWallet()">Inquiry</button>
       </form>
+      <div *ngIf="wallet" class="wallet">
+        Balance: <b>{{wallet.balance}}</b> ETH
+      </div>
     </mat-card-content>
     <!--
         <mat-card-actions>
